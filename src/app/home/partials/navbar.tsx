@@ -68,7 +68,7 @@ const Navbar = () => {
           <SheetContent>
             <SheetTitle>Menu</SheetTitle>
 
-            <nav>
+            <nav className='mt-16'>
               <ul className='flex flex-col gap-4'>
                 {navigationData.map((data) => (
                   <li key={data.label}>

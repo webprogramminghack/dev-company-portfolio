@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import AdobeIcon from '../../public/icons/icon-adobe.svg';
 import AirbnbIcon from '../../public/icons/icon-airbnb.svg';
 import DatabricksIcon from '../../public/icons/icon-databricks.svg';
@@ -9,7 +11,7 @@ import UpworkIcon from '../../public/icons/icon-upwork.svg';
 import ZoomIcon from '../../public/icons/icon-zoom.svg';
 
 type TrustedCompanyImageProps = {
-  src: string;
+  src: StaticImageData;
   alt: string;
 };
 
