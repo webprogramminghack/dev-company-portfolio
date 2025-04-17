@@ -3,7 +3,10 @@ import React from 'react';
 
 const ImpactStatistics = () => {
   return (
-    <div className='custom-container flex flex-wrap items-center gap-6 py-5 md:gap-12 md:py-20'>
+    <div
+      className='custom-container flex flex-wrap items-center gap-6 py-5 md:gap-12 md:py-20'
+      id='about'
+    >
       <Image
         src='/images/impact-image.jpg'
         alt='impact image'

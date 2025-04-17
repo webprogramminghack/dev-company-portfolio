@@ -44,8 +44,9 @@ const ServiceCard: React.FC<ServiceCard> = ({ icon, title, description }) => {
   return (
     <div className='bg-base-background flex-1 basis-80 rounded-2xl border border-neutral-900 p-5 md:p-6'>
       {/* image wrapper */}
-      <div className='bg-primary-300 flex-center mx-auto size-12 rounded-full p-3 md:size-14 [&>*]:h-auto [&>*]:w-full'>
+      <div className='bg-primary-300 flex-center relative mx-auto size-12 rounded-full p-3 md:size-14 [&>*]:h-auto [&>*]:w-full'>
         {icon}
+        <div className='absolute inset-0 rounded-full shadow-[0_0_17px_rgba(0,147,221,0.6)] blur-3xl' />
       </div>
       <h3 className='text-md-semibold md:text-xl-semibold text-neutral-25 mt-4 text-center md:mt-6'>
         {title}

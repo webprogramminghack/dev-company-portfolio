@@ -58,7 +58,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <Button asChild className='hidden lg:flex'>
-          <Link href='#'>Get Started</Link>
+          <Link href='#contact'>Get Started</Link>
         </Button>
 
         <Sheet>
@@ -66,8 +66,6 @@ const Navbar = () => {
             <Menu className='cursor-pointer lg:hidden' />
           </SheetTrigger>
           <SheetContent>
-            <SheetTitle>Menu</SheetTitle>
-
             <nav className='mt-16'>
               <ul className='flex flex-col gap-4'>
                 {navigationData.map((data) => (
@@ -87,7 +85,7 @@ const Navbar = () => {
 
             <Button asChild className='mt-3 w-full'>
               <SheetClose asChild>
-                <Link href='#'>Get Started</Link>
+                <Link href='#contact'>Get Started</Link>
               </SheetClose>
             </Button>
           </SheetContent>

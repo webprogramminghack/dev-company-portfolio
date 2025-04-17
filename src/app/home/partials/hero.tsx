@@ -9,7 +9,10 @@ import SkewMotion from '@/components/ui/skew-motion';
 
 const Hero = () => {
   return (
-    <section className='custom-container flex flex-wrap items-center gap-7 overflow-hidden pt-28 md:gap-10 md:pt-36.75'>
+    <section
+      className='custom-container flex flex-wrap items-center gap-7 overflow-hidden pt-28 md:gap-10 md:pt-36.75'
+      id='hero'
+    >
       <div className='flex-[5.3] basis-80'>
         <h1 className='display-lg-bold md:display-2xl-bold text-neutral-25'>
           Your Trusted IT{' '}

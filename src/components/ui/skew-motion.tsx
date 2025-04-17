@@ -18,7 +18,7 @@ const SkewMotion: React.FC<SkewMotionProps> = ({
   children,
   duration = 0.5,
   delay = 0,
-  asChild,
+  asChild = false,
   ...motionProps
 }) => {
   const Comp = asChild ? MotionSlot : MotionDiv;

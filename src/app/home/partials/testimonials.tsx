@@ -18,6 +18,7 @@ const Testimonials = () => {
     <Section
       title='What Our Clients Say'
       subtitle='Real stories from businesses that have transformed with our IT solutions.'
+      id='testimonial'
     >
       <Carousel>
         <CarouselContent>

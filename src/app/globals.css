@@ -1,8 +1,5 @@
 @import 'tailwindcss';
 @config '../../tailwind.config.ts';
-/* @import 'tailwindcss-intersect'; */
-/* @import 'tw-animate-css';
-@plugin 'tailwindcss-motion'; */
 
 @import 'tw-animate-css';
 
@@ -192,6 +189,10 @@
 /* end of shadcn theme */
 /* ---------------------------------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-base-background text-sm font-normal text-white;
 
@@ -218,58 +219,6 @@ body {
   .flex-start {
     @apply flex items-center justify-start;
   }
-}
-
-/* container max-width based on design is 1208px */
-.dynamic-hero-image-height {
-  height: clamp(21.25rem, calc((639 / 1208) * 100vw), 39.625rem);
-}
-
-.feature-card-wrapper {
-  width: clamp(6.375rem, calc((192 / 1208) * 100vw), 12rem);
-  /* 4px/8px */
-  border-radius: clamp(0.25rem, calc((8 / 1208) * 100vw), 0.5rem);
-}
-
-.feature-card {
-  border-radius: clamp(0.25rem, calc((8 / 1208) * 100vw), 0.5rem);
-  /* padding 8px/16px */
-  padding: clamp(0.5rem, calc((16 / 1208) * 100vw), 1rem);
-}
-
-/* size 40px desktop */
-/* size 20px mobile */
-/* 20px/40px */
-/* should produce clamp(1.25rem, calc((40 / 1208) * 100vw), 2.5rem) */
-.feature-card-icon-wrapper {
-  /* width 20px/40px */
-  width: clamp(1.25rem, calc((40 / 1208) * 100vw), 2.5rem);
-  height: clamp(1.25rem, calc((40 / 1208) * 100vw), 2.5rem);
-  /* padding 5px/9px */
-  padding: clamp(0.25rem, calc((9 / 1208) * 100vw), 0.5rem);
-}
-
-.feature-card-icon-wrapper > * {
-  width: 100%;
-  height: auto;
-}
-
-.feature-card-title {
-  @apply font-bold;
-  /* font size 8px/14px */
-  font-size: clamp(0.5rem, calc((14 / 1208) * 100vw), 0.875rem);
-  /* line height 15px/28px */
-  line-height: clamp(0.9375rem, calc((28 / 1208) * 100vw), 1.75rem);
-  /* margin top 4px/8px */
-  margin-top: clamp(0.25rem, calc((8 / 1208) * 100vw), 0.5rem);
-}
-
-.feature-card-description {
-  @apply font-regular;
-  /* font size 8px/14px */
-  font-size: clamp(0.5rem, calc((14 / 1208) * 100vw), 0.875rem);
-  /* line height 15px/28px */
-  line-height: clamp(0.9375rem, calc((28 / 1208) * 100vw), 1.75rem);
 }
 
 img {

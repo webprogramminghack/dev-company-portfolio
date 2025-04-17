@@ -11,6 +11,7 @@ const Projects = () => {
     <Section
       title='Transforming Ideas into Digital Excellence'
       subtitle='Explore our past projects and see how we’ve helped businesses grow with innovative IT solutions'
+      id='projects'
     >
       <Cards>
         {projectsData.map((project) => (

@@ -11,9 +11,10 @@ export const Section: React.FC<SectionProps> = ({
   children,
   title,
   subtitle,
+  id,
 }) => {
   return (
-    <div className='custom-container py-10 md:py-20'>
+    <div className='custom-container py-10 md:py-20' id={id}>
       {/* heading */}
       <div className='text-center'>
         <h2 className='display-sm-bold md:display-lg-bold text-neutral-25'>

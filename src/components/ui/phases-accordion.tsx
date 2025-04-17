@@ -57,6 +57,10 @@ export const PhasesAccordionItem: React.FC<PhasesAccordionItemProps> = ({
         <span className='flex-center bg-primary-300 text-neutral-25 md:text-md-semibold text-sm-semibold absolute inset-x-0 top-1/2 aspect-square -translate-y-1/2 rounded-full'>
           {index}
         </span>
+        {/* blur effect */}
+        <span className='flex-center absolute inset-x-0 top-1/2 aspect-square -translate-y-1/2 rounded-full shadow-[0_0_17px_rgba(0,147,221,0.6)] blur-3xl'>
+          {index}
+        </span>
       </div>
       {/* right column */}
       <AccordionItem value={`item-${index}`}>
